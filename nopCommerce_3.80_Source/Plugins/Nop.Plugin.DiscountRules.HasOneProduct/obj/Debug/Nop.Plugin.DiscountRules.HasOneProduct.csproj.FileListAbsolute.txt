@@ -1,0 +1,12 @@
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Presentation\Nop.Web\Plugins\DiscountRules.HasOneProduct\Views\DiscountRulesHasOneProduct\Configure.cshtml
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Presentation\Nop.Web\Plugins\DiscountRules.HasOneProduct\Description.txt
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Presentation\Nop.Web\Plugins\DiscountRules.HasOneProduct\web.config
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Presentation\Nop.Web\Plugins\DiscountRules.HasOneProduct\Views\DiscountRulesHasOneProduct\ProductAddPopup.cshtml
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Presentation\Nop.Web\Plugins\DiscountRules.HasOneProduct\logo.jpg
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Presentation\Nop.Web\Plugins\DiscountRules.HasOneProduct\Nop.Plugin.DiscountRules.HasOneProduct.dll.config
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Presentation\Nop.Web\Plugins\DiscountRules.HasOneProduct\Nop.Plugin.DiscountRules.HasOneProduct.dll
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Presentation\Nop.Web\Plugins\DiscountRules.HasOneProduct\Nop.Plugin.DiscountRules.HasOneProduct.pdb
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Plugins\Nop.Plugin.DiscountRules.HasOneProduct\obj\Debug\Nop.Plugin.DiscountRules.HasOneProduct.csproj.App.config
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Plugins\Nop.Plugin.DiscountRules.HasOneProduct\obj\Debug\Nop.Plugin.DiscountRules.HasOneProduct.csprojResolveAssemblyReference.cache
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Plugins\Nop.Plugin.DiscountRules.HasOneProduct\obj\Debug\Nop.Plugin.DiscountRules.HasOneProduct.dll
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Plugins\Nop.Plugin.DiscountRules.HasOneProduct\obj\Debug\Nop.Plugin.DiscountRules.HasOneProduct.pdb

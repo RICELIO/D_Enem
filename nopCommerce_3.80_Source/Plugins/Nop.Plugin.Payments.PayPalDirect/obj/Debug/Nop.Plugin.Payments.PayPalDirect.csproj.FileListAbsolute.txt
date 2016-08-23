@@ -1,0 +1,12 @@
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Presentation\Nop.Web\Plugins\Payments.PayPalDirect\Views\PaymentPayPalDirect\Configure.cshtml
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Presentation\Nop.Web\Plugins\Payments.PayPalDirect\Views\PaymentPayPalDirect\PaymentInfo.cshtml
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Presentation\Nop.Web\Plugins\Payments.PayPalDirect\web.config
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Presentation\Nop.Web\Plugins\Payments.PayPalDirect\Description.txt
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Presentation\Nop.Web\Plugins\Payments.PayPalDirect\logo.jpg
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Presentation\Nop.Web\Plugins\Payments.PayPalDirect\Nop.Plugin.Payments.PayPalDirect.dll.config
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Presentation\Nop.Web\Plugins\Payments.PayPalDirect\Nop.Plugin.Payments.PayPalDirect.dll
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Presentation\Nop.Web\Plugins\Payments.PayPalDirect\Nop.Plugin.Payments.PayPalDirect.pdb
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Plugins\Nop.Plugin.Payments.PayPalDirect\obj\Debug\Nop.Plugin.Payments.PayPalDirect.csproj.App.config
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Plugins\Nop.Plugin.Payments.PayPalDirect\obj\Debug\Nop.Plugin.Payments.PayPalDirect.csprojResolveAssemblyReference.cache
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Plugins\Nop.Plugin.Payments.PayPalDirect\obj\Debug\Nop.Plugin.Payments.PayPalDirect.dll
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Plugins\Nop.Plugin.Payments.PayPalDirect\obj\Debug\Nop.Plugin.Payments.PayPalDirect.pdb

@@ -1,0 +1,13 @@
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Presentation\Nop.Web\Plugins\Pickup.PickupInStore\Description.txt
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Presentation\Nop.Web\Plugins\Pickup.PickupInStore\Views\PickupInStore\Configure.cshtml
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Presentation\Nop.Web\Plugins\Pickup.PickupInStore\Views\PickupInStore\Create.cshtml
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Presentation\Nop.Web\Plugins\Pickup.PickupInStore\Views\PickupInStore\Edit.cshtml
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Presentation\Nop.Web\Plugins\Pickup.PickupInStore\Views\PickupInStore\_CreateOrUpdate.cshtml
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Presentation\Nop.Web\Plugins\Pickup.PickupInStore\web.config
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Presentation\Nop.Web\Plugins\Pickup.PickupInStore\logo.png
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Presentation\Nop.Web\Plugins\Pickup.PickupInStore\Nop.Plugin.Pickup.PickupInStore.dll.config
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Presentation\Nop.Web\Plugins\Pickup.PickupInStore\Nop.Plugin.Pickup.PickupInStore.dll
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Presentation\Nop.Web\Plugins\Pickup.PickupInStore\Nop.Plugin.Pickup.PickupInStore.pdb
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Plugins\Nop.Plugin.Pickup.PickupInStore\obj\Debug\Nop.Plugin.Pickup.PickupInStore.csprojResolveAssemblyReference.cache
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Plugins\Nop.Plugin.Pickup.PickupInStore\obj\Debug\Nop.Plugin.Pickup.PickupInStore.dll
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Plugins\Nop.Plugin.Pickup.PickupInStore\obj\Debug\Nop.Plugin.Pickup.PickupInStore.pdb

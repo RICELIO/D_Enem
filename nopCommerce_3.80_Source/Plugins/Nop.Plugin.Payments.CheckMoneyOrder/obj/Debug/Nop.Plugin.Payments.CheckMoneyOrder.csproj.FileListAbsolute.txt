@@ -1,0 +1,11 @@
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Presentation\Nop.Web\Plugins\Payments.CheckMoneyOrder\Views\PaymentCheckMoneyOrder\Configure.cshtml
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Presentation\Nop.Web\Plugins\Payments.CheckMoneyOrder\Views\PaymentCheckMoneyOrder\PaymentInfo.cshtml
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Presentation\Nop.Web\Plugins\Payments.CheckMoneyOrder\web.config
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Presentation\Nop.Web\Plugins\Payments.CheckMoneyOrder\Description.txt
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Presentation\Nop.Web\Plugins\Payments.CheckMoneyOrder\logo.jpg
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Presentation\Nop.Web\Plugins\Payments.CheckMoneyOrder\Nop.Plugin.Payments.CheckMoneyOrder.dll.config
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Presentation\Nop.Web\Plugins\Payments.CheckMoneyOrder\Nop.Plugin.Payments.CheckMoneyOrder.dll
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Presentation\Nop.Web\Plugins\Payments.CheckMoneyOrder\Nop.Plugin.Payments.CheckMoneyOrder.pdb
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Plugins\Nop.Plugin.Payments.CheckMoneyOrder\obj\Debug\Nop.Plugin.Payments.CheckMoneyOrder.csproj.App.config
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Plugins\Nop.Plugin.Payments.CheckMoneyOrder\obj\Debug\Nop.Plugin.Payments.CheckMoneyOrder.dll
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Plugins\Nop.Plugin.Payments.CheckMoneyOrder\obj\Debug\Nop.Plugin.Payments.CheckMoneyOrder.pdb

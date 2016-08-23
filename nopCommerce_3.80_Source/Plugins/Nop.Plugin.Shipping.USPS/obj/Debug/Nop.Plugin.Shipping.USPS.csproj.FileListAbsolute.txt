@@ -1,0 +1,10 @@
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Presentation\Nop.Web\Plugins\Shipping.USPS\Views\ShippingUSPS\Configure.cshtml
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Presentation\Nop.Web\Plugins\Shipping.USPS\web.config
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Presentation\Nop.Web\Plugins\Shipping.USPS\Description.txt
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Presentation\Nop.Web\Plugins\Shipping.USPS\logo.jpg
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Presentation\Nop.Web\Plugins\Shipping.USPS\Nop.Plugin.Shipping.USPS.dll.config
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Presentation\Nop.Web\Plugins\Shipping.USPS\Nop.Plugin.Shipping.USPS.dll
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Presentation\Nop.Web\Plugins\Shipping.USPS\Nop.Plugin.Shipping.USPS.pdb
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Plugins\Nop.Plugin.Shipping.USPS\obj\Debug\Nop.Plugin.Shipping.USPS.csproj.App.config
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Plugins\Nop.Plugin.Shipping.USPS\obj\Debug\Nop.Plugin.Shipping.USPS.dll
+C:\Users\ricelio.lopes\Downloads\nopCommerce_3.80_Source\Plugins\Nop.Plugin.Shipping.USPS\obj\Debug\Nop.Plugin.Shipping.USPS.pdb

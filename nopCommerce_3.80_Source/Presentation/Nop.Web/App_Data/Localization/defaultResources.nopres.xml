@@ -13548,4 +13548,43 @@
    <LocaleResource Name="Admin.Orders.Fields.Store">
       <Value>Loja</Value>
    </LocaleResource>
+   <LocaleResource Name="Admin.Customers.Customers.List.SearchIpAddress">
+      <Value>Endereço IP</Value>
+   </LocaleResource>
+   <LocaleResource Name="Admin.Customers.Customers.Fields.Password.Change">
+    <Value>Alterar senha</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.System.Warnings.IncompatiblePlugin">
+    <Value>'{0}' plugin é incompatível. Remova ou atualize</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Customers.Customers.Fields.Newsletter">
+    <Value>Informativo</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Customers.Customers.BackInStockSubscriptions.Store">
+    <Value>Loja</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Customers.Customers.BackInStockSubscriptions.Product">
+    <Value>Produto</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Customers.Customers.BackInStockSubscriptions.CreatedOn">
+    <Value>Aceito</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Customers.Customers.Orders.Store">
+    <Value>Loja</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.CurrentCarts.Store">
+    <Value>Loja</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Customers.Customers.ActivityLog.IpAddress">
+    <Value>Endereço IP</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Customers.Customers.RewardPoints.Fields.Store">
+    <Value>Loja</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Customers.Customers.RewardPoints.Fields.AddRewardPointsStore">
+    <Value>Loja</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Common.Export">
+    <Value>Exportar</Value>
+  </LocaleResource>
 </Language>

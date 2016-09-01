@@ -13585,6 +13585,57 @@
     <Value>Loja</Value>
   </LocaleResource>
   <LocaleResource Name="Admin.Common.Export">
-    <Value>Exportar</Value>
-  </LocaleResource>
+     <Value>Exportar</Value>
+   </LocaleResource>
+   <LocaleResource Name="Admin.Common.Import">
+     <Value>Importar</Value>
+   </LocaleResource>
+   <LocaleResource Name="Admin.Catalog.Products.List.SearchPublished">
+     <Value>Pesquisar Publicações</Value>
+   </LocaleResource>
+   <LocaleResource Name="Admin.Catalog.Products.List.SearchPublished.All">
+     <Value>Pesquisar Todas Publicações</Value>
+   </LocaleResource>
+   <LocaleResource Name="Admin.Catalog.Products.List.SearchPublished.PublishedOnly">
+     <Value>Pesquisar Somente Publicados</Value>
+   </LocaleResource>
+   <LocaleResource Name="Admin.Catalog.Products.List.SearchPublished.UnPublishedOnly">
+     <Value>Pesquisar Somente Não Publicados</Value>
+   </LocaleResource>
+   <LocaleResource Name="Admin.Catalog.Products.CommonInfo">
+     <Value>Informações Comuns</Value>
+   </LocaleResource>
+   <LocaleResource Name="Admin.Catalog.Products.Prices">
+     <Value>Preços</Value>
+   </LocaleResource>
+   <LocaleResource Name="Admin.Catalog.Products.Inventory">
+     <Value>Inventário</Value>
+   </LocaleResource>
+   <LocaleResource Name="Admin.Catalog.Products.Shipping">
+     <Value>Entregas</Value>
+   </LocaleResource>
+   <LocaleResource Name="Admin.Catalog.Products.Mappings">
+     <Value>Mapas</Value>
+   </LocaleResource>
+   <LocaleResource Name="Admin.Catalog.Products.Fields.Categories">
+     <Value>Campos de Categorias</Value>
+   </LocaleResource>
+   <LocaleResource Name="Admin.Catalog.Products.ProductAttributes.Hint">
+     <Value>Atributos do Produto</Value>
+   </LocaleResource>
+   <LocaleResource Name="Admin.Catalog.Products.SpecificationAttributes.Hint">
+     <Value>Especificações do Produto</Value>
+   </LocaleResource>
+   <LocaleResource Name="Admin.Catalog.Categories.Fields.Discounts">
+     <Value>Descontos</Value>
+   </LocaleResource>
+   <LocaleResource Name="Admin.Catalog.Categories.Fields.Discounts.NoDiscounts">
+     <Value>Nenhum desconto</Value>
+   </LocaleResource>
+   <LocaleResource Name="Admin.System.Warnings.Perfomance.IgnoreAcl.Notification">
+     <Value>Ignorar notificações acl</Value>
+   </LocaleResource>
+   <LocaleResource Name="Admin.System.Warnings.Perfomance.IgnoreStoreLimitations.Notification">
+     <Value>Ignorar limitações de loja</Value>
+   </LocaleResource>
 </Language>

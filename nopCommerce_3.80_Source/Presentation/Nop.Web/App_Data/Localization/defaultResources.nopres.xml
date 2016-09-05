@@ -1285,7 +1285,7 @@
       <Value>Você precisará salvar o atributo de check-out antes de adicionar valores para esta página de atributo de check-out.</Value>
    </LocaleResource>
    <LocaleResource Name="Admin.Catalog.Attributes.ProductAttributes">
-      <Value>Atributos do produto</Value>
+      <Value>Atributos do Produto</Value>
    </LocaleResource>
    <LocaleResource Name="Admin.Catalog.Attributes.ProductAttributes.Added">
       <Value>O atributo novo foi adicionado com êxito.</Value>
@@ -9505,7 +9505,7 @@
       <Value>Produto Agrupados</Value>
    </LocaleResource>
    <LocaleResource Name="Enums.Nop.Core.Domain.Catalog.ProductType.SimpleProduct">
-      <Value>Produto Simple</Value>
+      <Value>Produto Simples</Value>
    </LocaleResource>
    <LocaleResource Name="Enums.Nop.Core.Domain.Catalog.RecurringProductCyclePeriod.Days">
       <Value>Dias</Value>
@@ -13632,10 +13632,10 @@
    <LocaleResource Name="Admin.Catalog.Categories.Fields.Discounts.NoDiscounts">
      <Value>Nenhum desconto</Value>
    </LocaleResource>
-   <LocaleResource Name="Admin.System.Warnings.Perfomance.IgnoreAcl.Notification">
+   <LocaleResource Name="Admin.System.Warnings.Performance.IgnoreAcl.Notification">
      <Value>Ignorar notificações acl</Value>
    </LocaleResource>
-   <LocaleResource Name="Admin.System.Warnings.Perfomance.IgnoreStoreLimitations.Notification">
+   <LocaleResource Name="Admin.System.Warnings.Performance.IgnoreStoreLimitations.Notification">
      <Value>Ignorar limitações de loja</Value>
    </LocaleResource>
    <LocaleResource Name="Admin.System.Warnings.IncompatiblePlugin">
@@ -13650,4 +13650,100 @@
   <LocaleResource Name="Admin.Customers.Customers.SendEmail.SendImmediately">
     <Value>Enviar imediatamente</Value>
   </LocaleResource>
+  <LocaleResource Name="admin.catalog.products.fields.categories.nocategoriesavailable">
+    <Value>Não há categorias disponíveis. Crie pelo menos uma categoria antes do mapeamento.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Orders.List.BillingEmail">
+    <Value>E-mail do pedido</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Orders.List.BillingLastName">
+    <Value>Último nome do pedido</Value>
+  </LocaleResource>  
+  <LocaleResource Name="Admin.Orders.List.BillingCountry">
+    <Value>Cidade do pedido</Value>
+  </LocaleResource> 
+  <LocaleResource Name="Admin.Orders.List.PaymentMethod">
+    <Value>Método de Pagamento</Value>
+  </LocaleResource> 
+  <LocaleResource Name="Admin.Orders.List.OrderNotes">
+    <Value>Ordem das Notas</Value>
+  </LocaleResource>     
+  <LocaleResource Name="Admin.Orders.PdfInvoices">
+    <Value>Exporar PDF</Value>
+  </LocaleResource>    
+  <LocaleResource Name="Admin.Orders.PdfInvoices.All">
+    <Value>Exporar todos os pedidos</Value>
+  </LocaleResource>  
+  <LocaleResource Name="Admin.Orders.PdfInvoices.Selected">
+    <Value>Exporar pedido selecionado</Value>
+  </LocaleResource>  
+  <LocaleResource Name="admin.returnrequests.description">
+    <Value>Descrição dos retornos de pedidos</Value>
+  </LocaleResource>  
+  <LocaleResource Name="admin.returnrequests.fields.customnumber">
+    <Value>Id</Value>
+  </LocaleResource>    
+  <LocaleResource Name="Admin.SalesReport.Bestsellers.Vendor">
+    <Value>Melhores Vendedores</Value>
+  </LocaleResource>         
+  <LocaleResource Name="Admin.Promotions.Discounts.List.SearchDiscountName">
+    <Value>Nome do Desconto</Value>
+  </LocaleResource>  
+  <LocaleResource Name="Admin.Promotions.Discounts.List.SearchDiscountCouponCode">
+    <Value>Código do Desconto</Value>
+  </LocaleResource>  
+  <LocaleResource Name="Admin.Promotions.Discounts.List.SearchDiscountType">
+    <Value>Tipo do Desconto</Value>
+  </LocaleResource>    
+  <LocaleResource Name="admin.promotions.discounts.fields.discount">
+    <Value>Desconto</Value>
+  </LocaleResource>    
+  <LocaleResource Name="admin.promotions.discounts.fields.timesused">
+    <Value>Horário do Uso</Value>
+  </LocaleResource>  
+  <LocaleResource Name="Admin.Promotions.Discounts.Fields.IsCumulative">
+    <Value>Desconto é acumulativo?</Value>
+  </LocaleResource>  
+  <LocaleResource Name="admin.affiliates.description">
+    <Value>Descrição Afiliados</Value>
+  </LocaleResource>   
+  <LocaleResource Name="Admin.Affiliates.List.SearchFirstName">
+    <Value>Primeiro nome do afiliado</Value>
+  </LocaleResource>     
+  <LocaleResource Name="Admin.Affiliates.List.SearchFriendlyUrlName">
+    <Value>Url</Value>
+  </LocaleResource>   
+  <LocaleResource Name="Admin.Affiliates.List.LoadOnlyWithOrders">
+    <Value>Carregar somente afiliados com ordens</Value>
+  </LocaleResource>       
+  <LocaleResource Name="Admin.Affiliates.Fields.FriendlyUrlName">
+    <Value>Url</Value>
+  </LocaleResource>  
+  <LocaleResource Name="admin.promotions.campaigns.fields.dontsendbeforedate">
+    <Value>Data planejada para envio</Value>
+  </LocaleResource>   
+  <LocaleResource Name="Admin.Promotions.Campaigns.Fields.CustomerRole">
+    <Value>Customizar regras da campanha</Value>
+  </LocaleResource> 
+  <LocaleResource Name="admin.contentmanagement.topics.fields.published">
+    <Value>Publicado</Value>
+  </LocaleResource> 
+  <LocaleResource Name="admin.contentmanagement.topics.fields.includeinfootercolumn1">
+    <Value>Incluir no rodapé coluna 1</Value>
+  </LocaleResource> 
+  <LocaleResource Name="admin.contentmanagement.topics.fields.includeinfootercolumn2">
+    <Value>Incluir no rodapé coluna 2</Value>
+  </LocaleResource> 
+  <LocaleResource Name="admin.contentmanagement.topics.fields.includeinfootercolumn3">
+    <Value>Incluir no rodapé coluna 3</Value>
+  </LocaleResource>   
+  <LocaleResource Name="admin.contentmanagement.topics.fields.displayorder">
+    <Value>Ordem de exibição</Value>
+  </LocaleResource>   
+  <LocaleResource Name="Admin.ContentManagement.Topics.Fields.LimitedToStores">
+    <Value>Limitado das demais lojas</Value>
+  </LocaleResource>   
+  <LocaleResource Name="Admin.ContentManagement.Topics.Fields.AccessibleWhenStoreClosed">
+    <Value>Acessível quando a loja estiver fechada?</Value>
+  </LocaleResource>     
 </Language>

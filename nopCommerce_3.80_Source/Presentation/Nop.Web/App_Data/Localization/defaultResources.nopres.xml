@@ -6519,7 +6519,7 @@
       <Value>O último endereço IP utilizado.</Value>
    </LocaleResource>
    <LocaleResource Name="Admin.Customers.Customers.Fields.IsTaxExempt">
-      <Value>É imposto isentos</Value>
+      <Value>Isentos de impostos</Value>
    </LocaleResource>
    <LocaleResource Name="Admin.Customers.Customers.Fields.LastActivityDate">
       <Value>Última visita</Value>
@@ -13638,4 +13638,16 @@
    <LocaleResource Name="Admin.System.Warnings.Perfomance.IgnoreStoreLimitations.Notification">
      <Value>Ignorar limitações de loja</Value>
    </LocaleResource>
+   <LocaleResource Name="Admin.System.Warnings.IncompatiblePlugin">
+    <Value>'{0}' plugin é incompatível. Remova ou atualize</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Customers.Customers.BackInStockSubscriptions">
+    <Value>Detalhes de Estoque</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Customers.Customers.BackInStockSubscriptions">
+    <Value>Detalhes de Estoque</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Customers.Customers.SendEmail.SendImmediately">
+    <Value>Enviar imediatamente</Value>
+  </LocaleResource>
 </Language>

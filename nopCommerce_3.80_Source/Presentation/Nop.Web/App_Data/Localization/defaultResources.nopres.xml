@@ -13745,5 +13745,176 @@
   </LocaleResource>   
   <LocaleResource Name="Admin.ContentManagement.Topics.Fields.AccessibleWhenStoreClosed">
     <Value>Acessível quando a loja estiver fechada?</Value>
-  </LocaleResource>     
+  </LocaleResource>
+  <LocaleResource Name="Admin.System.Warnings.Performance.IgnoreAcl.Notification">
+    <Value>Para utilizar esta funcionalidade você tem que desativar a seguinte configuração : Configurações do catálogo > Ignorar regras ACL.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.GeneralCommon.Logo">
+    <Value>Logo</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.Mode.Basic">
+    <Value>Básico</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.Mode.Advanced">
+    <Value>Avançado</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.GeneralCommon.SubjectFieldOnContactUsForm">
+    <Value>Página contacte-nos campo 'Assunto'</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.GeneralCommon.UseSystemEmailForContactUsForm">
+    <Value>Página contacte-nos. Usar email do sistema</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.GeneralCommon.SitemapEnabled">
+    <Value>Sitemap habilitado</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.GeneralCommon.SitemapIncludeCategories">
+    <Value>Sitemap inclui categorias</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.GeneralCommon.SitemapIncludeManufacturers">
+    <Value>Sitemap inclui fabricantes</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.GeneralCommon.SitemapIncludeProducts">
+    <Value>Sitemap inclui produtos</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.GeneralCommon.CustomHeadTags">
+    <Value><![CDATA[Custom <head> tag]]></Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.GeneralCommon.EnableXSRFProtectionForAdminArea">
+    <Value>Habilitar proteção XSRF para administradores de área</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.GeneralCommon.EnableXSRFProtectionForPublicStore">
+    <Value>Habilitar proteção XSRF para publico da loja</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.GeneralCommon.HoneypotEnabled">
+    <Value>Habilitar detecção de intrusos</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.GeneralCommon.DisablePdfInvoicesForPendingOrders">
+    <Value>Desabilitar faturas em PDF de pedidos pendentes</Value>
+  </LocaleResource>
+<LocaleResource Name="Admin.Configuration.Settings.CustomerUser.CustomerSettings">
+    <Value>Configurações de usuário</Value>
+  </LocaleResource>  
+  <LocaleResource Name="Admin.Configuration.Settings.CustomerUser.RequireRegistrationForDownloadableProducts">
+    <Value>Requirer registro para download de produtos</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.CustomerUser.PasswordMinLength">
+    <Value>Tamanho mínimo de senha</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.Order.OnePageCheckoutDisplayOrderTotalsOnPaymentInfoTab">
+    <Value>Totalizar pedido na tab de informações de pagamento</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.Order.TermsOfServiceOnShoppingCartPage">
+    <Value>Termos de serviço (página do carrinho de compras)</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.Order.TermsOfServiceOnOrderConfirmPage">
+    <Value>Termos de serviço (página de confirmação de pedido)</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.Order.MinOrderSubtotalAmountIncludingTax">
+    <Value>Calcular 'sub-total do pedido' incluindo taxas</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.Order.AutoUpdateOrderTotalsOnEditingOrder">
+    <Value>Auto atualizar total de pedidos</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.Order.DisableBillingAddressCheckoutStep">
+    <Value>Desativar passo "Endereço de entrega"</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.Order.DisableOrderCompletedPage">
+    <Value>Desativar página "Pedido completo"</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.Order.AttachPdfInvoiceToOrderPaidEmail">
+    <Value>Anexar fatura em PDF ("Pedido pago" email)</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.Order.AttachPdfInvoiceToOrderCompletedEmail">
+    <Value>Anexar fatura em PDF("Pedido completo" email)</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.Order.GiftCards_Activated">
+    <Value>Os cartões de presentes são ativados no status de pedido</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.Order.GiftCards_Deactivated">
+    <Value>Os cartões de presentes são desativados no status de pedido</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.Order.ReturnRequestNumberMask">
+    <Value>Pedido de devolução máscara de número</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.Order.ReturnRequestNumberMask.Description.ID">
+    <Value>{ID} - identificador de solicitação de devolução</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.Order.ReturnRequestNumberMask.Description.YYYY">
+    <Value>{YYYY} - ano do pedido de devolução data de criação</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.Order.ReturnRequestNumberMask.Description.YY">
+    <Value>{YY} - dois últimos dígitos do ano de retorno criação pedido data</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.Order.ReturnRequestNumberMask.Description.MM">
+    <Value>{MM} - mês de solicitação de devolução data de criação</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.Order.ReturnRequestNumberMask.Description.DD">
+    <Value>{DD} - dia do pedido de devolução data de criação</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.Order.ReturnRequestReasons.Name.Required">
+    <Value>Por favor, forneça um nome.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.Order.ReturnRequestReasons.DisplayOrder">
+    <Value>Ordem de exibição</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.Order.ReturnRequestActions.Name.Required">
+    <Value>Por favor, forneça um nome.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.Order.ReturnRequestActions.DisplayOrder.Hint">
+    <Value>A ordem de apresentação da ação pedido de devolução . 1 representa o primeiro item na lista</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.Catalog.ProductSearchTermMinimumLength">
+    <Value>Comprimento mínimo do termo de pesquisa</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.Catalog.ShowProductReviewsPerStore">
+    <Value>Comentários por loja</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.Catalog.ShowProductReviewsTabOnAccountPage">
+    <Value>Mostrar produtos avaliados guia de página "Minha conta"</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.Catalog.ProductReviewsPageSizeOnAccountPage">
+    <Value>Tamanho de página de revisão de produtos</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.Catalog.NewProductsEnabled">
+    <Value>Habilitar a página 'Novos produtos'</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.Catalog.NewProductsNumber">
+    <Value>Número de produtos na página 'Novos produtos'</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.Catalog.DisplayTaxShippingInfoShoppingCart">
+    <Value>Exibir informações de taxa de envio (carrinho de compras) </Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.Catalog.ExportImportProductAttributes">
+    <Value>Exportar/Importar produtos com atributos</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.Catalog.SortOptions.Name">
+    <Value>Nome</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.Catalog.SortOptions.DisplayOrder">
+    <Value>Ordem de exibição</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.Catalog.SortOptions.IsActive">
+    <Value>Ativo</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Plugins.LoadMode">
+    <Value>Carregar</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Plugins.Group">
+    <Value>Grupo</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Plugins.Fields.Logo">
+    <Value>Logo</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Plugins.Info">
+    <Value>Informações do plugin</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Plugins.AdditionalInfo">
+    <Value>Informações adicionais</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Plugins.Local">
+    <Value>Plugins</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Menu.Search">
+    <Value>Pesquisar</Value>
+  </LocaleResource>  
 </Language>

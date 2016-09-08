@@ -1078,8 +1078,8 @@ namespace Nop.Admin.Controllers
             // Ensure that valid email address is entered if Registered role is checked to avoid registered customers with empty email address
             if (newCustomerRoles.Any() && newCustomerRoles.FirstOrDefault(c => c.SystemName == SystemCustomerRoleNames.Registered) != null && !CommonHelper.IsValidEmail(model.Email))
             {
-                ModelState.AddModelError("", "Valid Email is required for customer to be in 'Registered' role");
-                ErrorNotification("Valid Email is required for customer to be in 'Registered' role", false);
+                ModelState.AddModelError("", "E-mail Válido é requerido para o cliente para a função 'registrado'");
+                ErrorNotification("E-mail Válido é requerido para o cliente para a função 'registrado'", false);
             }
 
             if (ModelState.IsValid)

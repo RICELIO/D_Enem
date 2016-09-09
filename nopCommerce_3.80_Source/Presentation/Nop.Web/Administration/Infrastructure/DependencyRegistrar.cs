@@ -28,6 +28,8 @@ namespace Nop.Admin.Infrastructure
                 .WithParameter(ResolvedParameter.ForNamed<ICacheManager>("nop_cache_static"));
             builder.RegisterType<CategoryController>()
                 .WithParameter(ResolvedParameter.ForNamed<ICacheManager>("nop_cache_static"));
+            builder.RegisterType<LessonsController>()
+                .WithParameter(ResolvedParameter.ForNamed<ICacheManager>("nop_cache_static"));
             builder.RegisterType<CustomerRoleController>()
                 .WithParameter(ResolvedParameter.ForNamed<ICacheManager>("nop_cache_static"));
             builder.RegisterType<DiscountController>()

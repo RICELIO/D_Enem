@@ -66,7 +66,26 @@ namespace Nop.Admin.Extensions
         {
             return AutoMapperConfiguration.Mapper.Map(source, destination);
         }
-        
+
+        #region Lessons
+
+        public static LessonsModel ToModel(this Lesson entity)
+        {
+            return entity.MapTo<Lesson, LessonsModel>();
+        }
+
+        public static Lesson ToEntity(this LessonsModel model)
+        {
+            return model.MapTo<LessonsModel, Lesson>();
+        }
+
+        public static Lesson ToEntity(this LessonsModel model, Lesson destination)
+        {
+            return model.MapTo(destination);
+        }
+
+        #endregion
+
         #region Category
 
         public static CategoryModel ToModel(this Category entity)

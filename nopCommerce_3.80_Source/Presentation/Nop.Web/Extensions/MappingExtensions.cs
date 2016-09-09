@@ -38,6 +38,21 @@ namespace Nop.Web.Extensions
             return model;
         }
 
+        public static Nop.Admin.Models.Catalog.LessonsModel ToModel(this Lesson entity)
+        {
+            if (entity == null)
+                return null;
+
+            var model = new Nop.Admin.Models.Catalog.LessonsModel
+            {
+                Id = entity.Id,
+                Title = entity.GetLocalized(x => x.Title),
+                Description = entity.GetLocalized(x => x.Description),
+                SeName = entity.GetSeName(),
+            };
+            return model;
+        }
+
         //manufacturer
         public static ManufacturerModel ToModel(this Manufacturer entity)
         {

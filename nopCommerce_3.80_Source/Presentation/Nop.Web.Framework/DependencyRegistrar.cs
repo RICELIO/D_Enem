@@ -104,7 +104,6 @@ namespace Nop.Web.Framework
             builder.Register(c => dataSettingsManager.LoadSettings()).As<DataSettings>();
             builder.Register(x => new EfDataProviderManager(x.Resolve<DataSettings>())).As<BaseDataProviderManager>().InstancePerDependency();
 
-
             builder.Register(x => x.Resolve<BaseDataProviderManager>().LoadDataProvider()).As<IDataProvider>().InstancePerDependency();
 
             if (dataProviderSettings != null && dataProviderSettings.IsValid())
@@ -156,7 +155,7 @@ namespace Nop.Web.Framework
             //services
             builder.RegisterType<BackInStockSubscriptionService>().As<IBackInStockSubscriptionService>().InstancePerLifetimeScope();
             builder.RegisterType<CategoryService>().As<ICategoryService>().InstancePerLifetimeScope();
-            builder.RegisterType<CourseService>().As<ICourseService>().InstancePerLifetimeScope();
+            builder.RegisterType<LessonService>().As<ILessonService>().InstancePerLifetimeScope();
             builder.RegisterType<CompareProductsService>().As<ICompareProductsService>().InstancePerLifetimeScope();
             builder.RegisterType<RecentlyViewedProductsService>().As<IRecentlyViewedProductsService>().InstancePerLifetimeScope();
             builder.RegisterType<ManufacturerService>().As<IManufacturerService>().InstancePerLifetimeScope();

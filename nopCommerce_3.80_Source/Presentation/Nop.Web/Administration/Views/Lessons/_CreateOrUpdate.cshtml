@@ -1,0 +1,81 @@
+﻿@model LessonsModel
+
+@Html.ValidationSummary(false)
+@Html.HiddenFor(model => model.Id)
+
+<script>
+    $(document).ready(function() {
+        bindBootstrapTabSelectEvent('lessons-edit');
+    });
+</script>
+
+<div class="content">
+    <div class="form-horizontal">
+        <div id="category-edit" class="nav-tabs-custom">
+            <ul class="nav nav-tabs">
+                @Html.RenderBootstrapTabHeader("tab-info", @T("Admin.Catalog.Lessons.Info"), true)
+            </ul>
+            <div class="tab-content">
+                @Html.RenderBootstrapTabContent("tab-info", @TabInfo(), true)
+            </div>
+        </div>
+    </div>
+</div>
+
+@{
+    //custom tabs
+    var eventMessage = new AdminTabStripCreated(this.Html, "lessons-edit");
+    EngineContext.Current.Resolve<IEventPublisher>().Publish(eventMessage);
+    foreach (var eventBlock in eventMessage.BlocksToRender)
+    {
+        @eventBlock
+    }
+}
+
+@*save selected tab name*@
+<input type="hidden" id="selected-tab-name" name="selected-tab-name" value="@(Html.GetSelectedTabName())">
+
+@helper TabInfo()
+{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#@Html.FieldIdFor(model => model.AllowCustomersToSelectPageSize)").click(togglePageSize);
+            togglePageSize();
+        });
+
+        function togglePageSize() {
+            if ($('#@Html.FieldIdFor(model => model.AllowCustomersToSelectPageSize)').is(':checked')) {
+                $('#pnlPageSize').hide();
+                $('#pnlPageSizeOptions').show();
+            } else {
+                $('#pnlPageSize').show();
+                $('#pnlPageSizeOptions').hide();
+            }
+        }
+    </script>
+
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="form-group">
+                    <div class="col-md-3">
+                        @Html.NopLabelFor(model => model.Title)
+                    </div>
+                    <div class="col-md-9">
+                        @Html.NopEditorFor(model => model.Title)
+                        @Html.ValidationMessageFor(model => model.Title)
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        @Html.NopLabelFor(model => model.Description)
+                    </div>
+                    <div class="col-md-9">
+                        @Html.EditorFor(x => x.Description, "RichEditor")
+                        @Html.ValidationMessageFor(model => model.Description)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

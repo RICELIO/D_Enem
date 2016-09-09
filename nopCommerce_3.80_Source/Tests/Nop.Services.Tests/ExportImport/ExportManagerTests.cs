@@ -28,6 +28,7 @@ namespace Nop.Services.Tests.ExportImport
     [TestFixture]
     public class ExportManagerTests : ServiceTest
     {
+        private ILessonService _lessonService;
         private ICategoryService _categoryService;
         private IManufacturerService _manufacturerService;
         private IProductAttributeService _productAttributeService;
@@ -48,6 +49,7 @@ namespace Nop.Services.Tests.ExportImport
         public new void SetUp()
         {
             _storeService = MockRepository.GenerateMock<IStoreService>();
+            _lessonService = MockRepository.GenerateMock<ILessonService>();
             _categoryService = MockRepository.GenerateMock<ICategoryService>();
             _manufacturerService = MockRepository.GenerateMock<IManufacturerService>();
             _productAttributeService = MockRepository.GenerateMock<IProductAttributeService>();
@@ -62,7 +64,7 @@ namespace Nop.Services.Tests.ExportImport
             _measureService = MockRepository.GenerateMock<IMeasureService>();
             _catalogSettings=new CatalogSettings();
 
-            _exportManager = new ExportManager(_categoryService,
+            _exportManager = new ExportManager(_lessonService, _categoryService,
                 _manufacturerService, _productAttributeService, 
                 _pictureService, _newsLetterSubscriptionService,
                 _storeService, _workContext, _productEditorSettings, 

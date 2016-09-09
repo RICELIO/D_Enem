@@ -11,10 +11,10 @@
 
 <div class="content">
     <div class="form-horizontal">
-        <div class="row">
+        <div class="row" style="display: none;">
             <div class="col-md-12 clearfix">
                 <div class="pull-left">
-                    @Html.Action("Mode", "Setting", new {modeName = "product-advanced-mode"})
+                    @Html.Action("Mode", "Setting", new { modeName = "product-advanced-mode" })
                 </div>
                 @if (!Model.IsLoggedInAsVendor)
                 {

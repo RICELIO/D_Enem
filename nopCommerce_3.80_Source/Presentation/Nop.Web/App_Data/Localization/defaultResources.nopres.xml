@@ -13917,4 +13917,85 @@
   <LocaleResource Name="Admin.Menu.Search">
     <Value>Pesquisar</Value>
   </LocaleResource>  
+  <LocaleResource Name="Admin.Catalog.Lessons">
+    <Value>Lições</Value>
+  </LocaleResource>    
+  <LocaleResource Name="admin.configuration.acl.description">
+    <Value>Descrição dos Controles de Acesso</Value>
+  </LocaleResource>     
+  <LocaleResource Name="Admin.Configuration.Settings.CustomerUser.DateOfBirthRequired">
+    <Value>Data de nascimento é obrigatória?</Value>
+  </LocaleResource>  
+  <LocaleResource Name="Admin.Catalog.Lessons.Manage">
+    <Value>Gerenciar lições</Value>
+  </LocaleResource>  
+  <LocaleResource Name="Admin.Catalog.Lessons.Fields.Title">
+    <Value>Título da Lição</Value>
+  </LocaleResource>  
+  <LocaleResource Name="Admin.Catalog.Lessons.Fields.Description">
+    <Value>Descrição da Lição</Value>
+  </LocaleResource>      
+  <LocaleResource Name="Admin.Catalog.Lessons.Fields.DisplayOrder">
+    <Value>Ordem de exibição</Value>
+  </LocaleResource>  
+  <LocaleResource Name="Admin.Catalog.Lessons.List.SearchLessonsName">
+    <Value>Nome da Lição</Value>
+  </LocaleResource> 
+  <LocaleResource Name="Admin.Catalog.Lessons.List.SearchStore">
+    <Value>Busca da lição na loja</Value>
+  </LocaleResource>    
+  <LocaleResource Name="Admin.Catalog.Lessons.BackToList">
+      <Value>Voltar à lista de lições</Value>
+   </LocaleResource>
+   <LocaleResource Name="Admin.Catalog.Lessons.AddNew">
+      <Value>Adicionar uma nova lição</Value>
+   </LocaleResource>
+   <LocaleResource Name="Admin.Catalog.Lessons.EditLessonsDetails">
+      <Value>Editar detalhes da lição</Value>
+   </LocaleResource>
+   <LocaleResource Name="Admin.Catalog.Lessons.Info">
+      <Value>Informações da lição</Value>
+   </LocaleResource>
+   <LocaleResource Name="Admin.Catalog.Lessons.Lesson">
+      <Value>Lição</Value>
+   </LocaleResource>
+   <LocaleResource Name="Admin.Catalog.Lessons.Fields.AllowCustomersToSelectPageSize">
+      <Value>Permitir que os Usuários selecionem o tamanho da página</Value>
+   </LocaleResource>
+   <LocaleResource Name="Admin.Catalog.Lessons.Fields.AllowCustomersToSelectPageSize">
+      <Value>Permitir que os Usuários selecionem o tamanho da página</Value>
+   </LocaleResource>
+   <LocaleResource Name="Admin.Catalog.Lessons.Fields.PageSizeOptions">
+      <Value>Opções de tamanho da página (separados por vírgula)</Value>
+   </LocaleResource>
+   <LocaleResource Name="ActivityLog.AddNewLesson">
+      <Value>Adicionado uma nova lição ('{0}')</Value>
+   </LocaleResource>
+   <LocaleResource Name="Admin.Catalog.Lesson.Added">
+      <Value>A nova lição foi adicionada com êxito.</Value>
+   </LocaleResource>
+   <LocaleResource Name="Admin.Catalog.Lesson.Fields.SeName">
+      <Value>Nome de página amigável do mecanismo de pesquisa</Value>
+   </LocaleResource>
+   <LocaleResource Name="Admin.Catalog.Lesson.Fields.Title.Required">
+      <Value>Por favor, forneça um título.</Value>
+   </LocaleResource>
+   <LocaleResource Name="Admin.Catalog.Lesson.Fields.PageSizeOptions">
+      <Value>Opções de tamanho da página (separados por vírgula)</Value>
+   </LocaleResource>
+   <LocaleResource Name="Admin.Catalog.Lesson.Fields.Deleted">
+      <Value>Excluído</Value>
+   </LocaleResource>
+   <LocaleResource Name="ActivityLog.EditLesson">
+      <Value>Editado uma lição ('{0}')</Value>
+   </LocaleResource>
+   <LocaleResource Name="Admin.Catalog.Lesson.Updated">
+      <Value>A lição foi atualizada com sucesso.</Value>
+   </LocaleResource>   
+   <LocaleResource Name="ActivityLog.DeleteLesson">
+      <Value>Excluída a lição ('{0}')</Value>
+   </LocaleResource>
+   <LocaleResource Name="Admin.Catalog.Lesson.Deleted">
+      <Value>A lição foi excluída com sucesso.</Value>
+   </LocaleResource>
 </Language>

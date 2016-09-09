@@ -1013,6 +1013,10 @@
       <Project>{75FD4163-333C-4DD5-854D-2EF294E45D94}</Project>
       <Name>Nop.Web.Framework</Name>
     </ProjectReference>
+    <ProjectReference Include="Administration\Nop.Admin.csproj">
+      <Project>{152C761A-DD2E-4C1F-AF89-DFB2547A3BCA}</Project>
+      <Name>Nop.Admin</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Themes\DefaultClean\theme.config" />

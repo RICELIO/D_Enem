@@ -100,19 +100,11 @@ namespace Nop.Admin.Controllers
 
         #endregion
 
-
-
-
-
-
         #region Utilities
 
 
 
         #endregion
-
-
-
 
         #region List
 
@@ -126,7 +118,7 @@ namespace Nop.Admin.Controllers
             if (!_permissionService.Authorize(StandardPermissionProvider.ManageCourse))
                 return AccessDeniedView();
 
-            var model = new CategoryListModel();
+            var model = new CourseListModel();
             model.AvailableStores.Add(new SelectListItem { Text = _localizationService.GetResource("Admin.Common.All"), Value = "0" });
             foreach (var s in _storeService.GetAllStores())
                 model.AvailableStores.Add(new SelectListItem { Text = s.Name, Value = s.Id.ToString() });
@@ -164,9 +156,6 @@ namespace Nop.Admin.Controllers
                 return AccessDeniedView();
 
             var model = new CourseModel();
-            //locales
-            AddLocales(_languageService, model.Locales);
-            
             //default values
             model.PageSize = _catalogSettings.DefaultCategoryPageSize;
             model.PageSizeOptions = _catalogSettings.DefaultCategoryPageSizeOptions;

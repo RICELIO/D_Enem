@@ -37,9 +37,9 @@ namespace Nop.Services.ExportImport
     {
         #region Fields
 
+        private readonly ILessonService _lessonService;
         private readonly ICategoryService _categoryService;
         private readonly IManufacturerService _manufacturerService;
-        private readonly ICourseService _courseServiceService;
         private readonly IProductAttributeService _productAttributeService;
         private readonly IPictureService _pictureService;
         private readonly INewsLetterSubscriptionService _newsLetterSubscriptionService;
@@ -57,7 +57,8 @@ namespace Nop.Services.ExportImport
 
         #region Ctor
 
-        public ExportManager(ICategoryService categoryService,
+        public ExportManager(ILessonService lessonService,
+            ICategoryService categoryService,
             IManufacturerService manufacturerService,
             IProductAttributeService productAttributeService,
             IPictureService pictureService,
@@ -72,6 +73,7 @@ namespace Nop.Services.ExportImport
             IMeasureService measureService,
             CatalogSettings catalogSettings)
         {
+            this._lessonService = lessonService;
             this._categoryService = categoryService;
             this._manufacturerService = manufacturerService;
             this._productAttributeService = productAttributeService;
@@ -234,7 +236,7 @@ namespace Nop.Services.ExportImport
             var productAdvancedMode = _workContext.CurrentCustomer.GetAttribute<bool>("product-advanced-mode");
             return !productAdvancedMode && !func(_productEditorSettings);
         }
-        
+
         /// <summary>
         /// Export objects to XLSX
         /// </summary>
@@ -648,7 +650,7 @@ namespace Nop.Services.ExportImport
                 xmlWriter.WriteElementString("Published", null, product.Published.ToString());
                 xmlWriter.WriteElementString("CreatedOnUtc", null, product.CreatedOnUtc.ToString());
                 xmlWriter.WriteElementString("UpdatedOnUtc", null, product.UpdatedOnUtc.ToString());
-                
+
                 xmlWriter.WriteStartElement("ProductDiscounts");
                 var discounts = product.AppliedDiscounts;
                 foreach (var discount in discounts)
@@ -735,7 +737,7 @@ namespace Nop.Services.ExportImport
                     xmlWriter.WriteEndElement();
                 }
                 xmlWriter.WriteEndElement();
-                
+
                 xmlWriter.WriteStartElement("ProductPictures");
                 var productPictures = product.ProductPictures;
                 foreach (var productPicture in productPictures)
@@ -803,7 +805,7 @@ namespace Nop.Services.ExportImport
             xmlWriter.Close();
             return stringWriter.ToString();
         }
-        
+
         /// <summary>
         /// Export products to XLSX
         /// </summary>
@@ -1085,9 +1087,9 @@ namespace Nop.Services.ExportImport
                         xmlWriter.WriteElementString("TrackingNumber", null, shipment.TrackingNumber);
                         xmlWriter.WriteElementString("TotalWeight", null, shipment.TotalWeight.HasValue ? shipment.TotalWeight.Value.ToString() : String.Empty);
 
-                        xmlWriter.WriteElementString("ShippedDateUtc", null, shipment.ShippedDateUtc.HasValue ? 
+                        xmlWriter.WriteElementString("ShippedDateUtc", null, shipment.ShippedDateUtc.HasValue ?
                             shipment.ShippedDateUtc.ToString() : String.Empty);
-                        xmlWriter.WriteElementString("DeliveryDateUtc", null, shipment.DeliveryDateUtc.HasValue ? 
+                        xmlWriter.WriteElementString("DeliveryDateUtc", null, shipment.DeliveryDateUtc.HasValue ?
                             shipment.DeliveryDateUtc.Value.ToString() : String.Empty);
                         xmlWriter.WriteElementString("CreatedOnUtc", null, shipment.CreatedOnUtc.ToString());
                         xmlWriter.WriteEndElement();
@@ -1342,6 +1344,59 @@ namespace Nop.Services.ExportImport
                 sb.Append(Environment.NewLine); //new line
             }
             return sb.ToString();
+        }
+
+        protected virtual void WriteLessons(XmlWriter xmlWriter)
+        {
+            var lessons = _lessonService.GetAllLessons();
+            if (lessons != null)
+            {
+                foreach (var lesson in lessons)
+                {
+                    xmlWriter.WriteStartElement("Lesson");
+                    xmlWriter.WriteElementString("Id", null, lesson.Id.ToString());
+                    xmlWriter.WriteElementString("Title", null, lesson.Title);
+                    xmlWriter.WriteElementString("Description", null, lesson.Description);
+                    xmlWriter.WriteElementString("CreatedOnUtc", null, lesson.CreatedOnUtc.ToString());
+                    xmlWriter.WriteElementString("UpdatedOnUtc", null, lesson.UpdatedOnUtc.ToString());
+                    xmlWriter.WriteEndElement();
+                }
+            }
+        }
+
+        /// <summary>
+        /// Export category list to xml
+        /// </summary>
+        /// <returns>Result in XML format</returns>
+        public virtual string ExportLessonsToXml()
+        {
+            var sb = new StringBuilder();
+            var stringWriter = new StringWriter(sb);
+            var xmlWriter = new XmlTextWriter(stringWriter);
+            xmlWriter.WriteStartDocument();
+            xmlWriter.WriteStartElement("Lessons");
+            xmlWriter.WriteAttributeString("Version", NopVersion.CurrentVersion);
+            WriteLessons(xmlWriter);
+            xmlWriter.WriteEndElement();
+            xmlWriter.WriteEndDocument();
+            xmlWriter.Close();
+            return stringWriter.ToString();
+        }
+
+        /// <summary>
+        /// Export categories to XLSX
+        /// </summary>
+        /// <param name="categories">Categories</param>
+        public virtual byte[] ExportLessonsToXlsx(IEnumerable<Lesson> lessons)
+        {
+            //property array
+            var properties = new[]
+            {
+                new PropertyByName<Lesson>("Id", p => p.Id),
+                new PropertyByName<Lesson>("Name", p => p.Title),
+                new PropertyByName<Lesson>("Description", p => p.Description)
+            };
+            return ExportToXlsx(properties, lessons);
         }
 
         public byte[] ExportCourseToXlsx(IEnumerable<Course> course)

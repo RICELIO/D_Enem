@@ -86,6 +86,25 @@ namespace Nop.Admin.Extensions
 
         #endregion
 
+        #region Course
+
+        public static CourseModel ToModel(this Course entity)
+        {
+            return entity.MapTo<Course, CourseModel>();
+        }
+
+        public static Course ToEntity(this CourseModel model)
+        {
+            return model.MapTo<CourseModel, Course>();
+        }
+
+        public static Course ToEntity(this CategoryModel model, Course destination)
+        {
+            return model.MapTo(destination);
+        }
+
+        #endregion
+
         #region Manufacturer
 
         public static ManufacturerModel ToModel(this Manufacturer entity)

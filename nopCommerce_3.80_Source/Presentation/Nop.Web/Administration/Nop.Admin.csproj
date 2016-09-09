@@ -156,6 +156,7 @@
     <Compile Include="Controllers\BaseAdminController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\AddressAttributeController.cs" />
+    <Compile Include="Controllers\CourseController.cs" />
     <Compile Include="Controllers\PreferencesController.cs" />
     <Compile Include="Controllers\CustomerAttributeController.cs" />
     <Compile Include="Controllers\CheckoutAttributeController.cs" />
@@ -216,6 +217,8 @@
     <Compile Include="Infrastructure\Mapper\AutoMapperStartupTask.cs" />
     <Compile Include="Models\Affiliates\AffiliateListModel.cs" />
     <Compile Include="Models\Affiliates\AffiliatedOrderListModel.cs" />
+    <Compile Include="Models\Catalog\CourseModel.cs" />
+    <Compile Include="Models\Catalog\CourseListModel.cs" />
     <Compile Include="Models\Catalog\ProductAttributeConditionModel.cs" />
     <Compile Include="Models\Catalog\AddProductAttributeCombinationModel.cs" />
     <Compile Include="Models\Catalog\LowStockProductModel.cs" />
@@ -366,6 +369,7 @@
     <Compile Include="Models\Settings\TaxSettingsModel.cs" />
     <Compile Include="Models\Cms\WidgetModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Validators\Catalog\CourseValidator.cs" />
     <Compile Include="Validators\Catalog\PredefinedProductAttributeValueModelValidator.cs" />
     <Compile Include="Validators\Common\AddressAttributeValidator.cs" />
     <Compile Include="Validators\Common\AddressAttributeValueValidator.cs" />
@@ -2139,6 +2143,7 @@
     <Content Include="Views\Product\_CreateOrUpdate.PurchasedWithOrders.cshtml" />
     <Content Include="Views\Common\AclDisabledWarning.cshtml" />
     <Content Include="Views\Common\MultistoreDisabledWarning.cshtml" />
+    <Content Include="Views\Course\List.cshtml" />
     <None Include="Views\Product\_ProductAttributes.cshtml" />
     <Content Include="Views\Setting\_ReturnRequestReasons.cshtml" />
     <Content Include="Views\Setting\ReturnRequestReasonEdit.cshtml" />

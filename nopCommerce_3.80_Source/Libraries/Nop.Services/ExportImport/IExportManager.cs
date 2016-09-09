@@ -37,6 +37,9 @@ namespace Nop.Services.ExportImport
         /// <param name="categories">Categories</param>
         byte[] ExportCategoriesToXlsx(IEnumerable<Category> categories);
 
+
+        byte[] ExportCourseToXlsx(IEnumerable<Course> course);
+
         /// <summary>
         /// Export product list to xml
         /// </summary>

@@ -982,6 +982,9 @@ namespace Nop.Admin.Infrastructure.Mapper
                     .ForMember(dest => dest.CustomProperties, mo => mo.Ignore());
                 cfg.CreateMap<TopicTemplateModel, TopicTemplate>();
 
+                cfg.CreateMap<Course, CourseModel>();
+                cfg.CreateMap<CourseModel, Course>();
+
             });
             _mapper = _mapperConfiguration.CreateMapper();
         }

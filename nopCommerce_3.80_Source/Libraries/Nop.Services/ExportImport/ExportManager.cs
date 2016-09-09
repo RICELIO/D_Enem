@@ -39,6 +39,7 @@ namespace Nop.Services.ExportImport
 
         private readonly ICategoryService _categoryService;
         private readonly IManufacturerService _manufacturerService;
+        private readonly ICourseService _courseServiceService;
         private readonly IProductAttributeService _productAttributeService;
         private readonly IPictureService _pictureService;
         private readonly INewsLetterSubscriptionService _newsLetterSubscriptionService;
@@ -1341,6 +1342,20 @@ namespace Nop.Services.ExportImport
                 sb.Append(Environment.NewLine); //new line
             }
             return sb.ToString();
+        }
+
+        public byte[] ExportCourseToXlsx(IEnumerable<Course> course)
+        {
+            //property array
+            var properties = new[]
+            {
+                new PropertyByName<Course>("Id", p => p.Id),
+                new PropertyByName<Course>("Name", p => p.Name),
+                new PropertyByName<Course>("Description", p => p.Description),
+                new PropertyByName<Course>("SeName", p => p.GetSeName(0))
+            };
+
+            return ExportToXlsx(properties, course);
         }
 
         #endregion

@@ -134,7 +134,13 @@ namespace Nop.Services.Catalog
             if (course == null)
                 throw new ArgumentNullException("Curso");
 
-            UpdateCourse(course);
+            _courseRepository.Delete(course);
+
+            //cache
+            _cacheManager.RemoveByPattern(CATEGORIES_PATTERN_KEY);
+
+            //event notification
+            _eventPublisher.EntityUpdated(course);
         }
 
         public IPagedList<Course> GetAllCourse(string courseName = "", int storeId = 0, int pageIndex = 0, int pageSize = int.MaxValue, bool showHidden = false)

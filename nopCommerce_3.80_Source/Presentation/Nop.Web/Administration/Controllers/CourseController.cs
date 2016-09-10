@@ -176,12 +176,15 @@ namespace Nop.Admin.Controllers
             if (ModelState.IsValid)
             {
                 var course = model.ToEntity();
+                course.CreatedOnUtc = DateTime.UtcNow;
+                course.UpdatedOnUtc = DateTime.UtcNow;
+                course.DisplayOrder = 0;
                 _courseService.InsertCourse(course);
 
                 //activity log
                 _customerActivityService.InsertActivity("AddNewCourse", _localizationService.GetResource("ActivityLog.AddNewCourse"), course.Name);
 
-                SuccessNotification(_localizationService.GetResource("Admin.Customers.CustomerRoles.Added"));
+                SuccessNotification(_localizationService.GetResource("Admin.Catalog.Course.Added"));
                 return continueEditing ? RedirectToAction("Edit", new { id = course.Id }) : RedirectToAction("List");
             }
 
@@ -203,13 +206,13 @@ namespace Nop.Admin.Controllers
         }
 
         [HttpPost, ParameterBasedOnFormName("save-continue", "continueEditing")]
-        public ActionResult Edit(CategoryModel model, bool continueEditing)
+        public ActionResult Edit(CourseModel model, bool continueEditing)
         {
             if (!_permissionService.Authorize(StandardPermissionProvider.ManageCustomers))
                 return AccessDeniedView();
 
-            var customerRole = _courseService.GetCourseById(model.Id);
-            if (customerRole == null)
+            var course = _courseService.GetCourseById(model.Id);
+            if (course == null)
                 //No customer role found with the specified id
                 return RedirectToAction("List");
 
@@ -217,14 +220,15 @@ namespace Nop.Admin.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    customerRole = model.ToEntity(customerRole);
-                    _courseService.UpdateCourse(customerRole);
+                    course = model.ToEntity(course);
+                    course.UpdatedOnUtc = DateTime.UtcNow;
+                    _courseService.UpdateCourse(course);
 
                     //activity log
-                    _customerActivityService.InsertActivity("EditCourse", _localizationService.GetResource("ActivityLog.EditCourse"), customerRole.Name);
+                    _customerActivityService.InsertActivity("EditCourse", _localizationService.GetResource("ActivityLog.EditCourse"), course.Name);
 
-                    SuccessNotification(_localizationService.GetResource("Admin.Customers.CustomerRoles.Updated"));
-                    return continueEditing ? RedirectToAction("Edit", new { id = customerRole.Id }) : RedirectToAction("List");
+                    SuccessNotification(_localizationService.GetResource("Admin.Catalog.Course.Updated"));
+                    return continueEditing ? RedirectToAction("Edit", new { id = course.Id }) : RedirectToAction("List");
                 }
 
                 //If we got this far, something failed, redisplay form
@@ -233,7 +237,7 @@ namespace Nop.Admin.Controllers
             catch (Exception exc)
             {
                 ErrorNotification(exc);
-                return RedirectToAction("Edit", new { id = customerRole.Id });
+                return RedirectToAction("Edit", new { id = course.Id });
             }
         }
 
@@ -243,25 +247,25 @@ namespace Nop.Admin.Controllers
             if (!_permissionService.Authorize(StandardPermissionProvider.ManageCustomers))
                 return AccessDeniedView();
 
-            var customerRole = _courseService.GetCourseById(id);
-            if (customerRole == null)
+            var course = _courseService.GetCourseById(id);
+            if (course == null)
                 //No customer role found with the specified id
                 return RedirectToAction("List");
 
             try
             {
-                _courseService.DeleteCourse(customerRole);
+                _courseService.DeleteCourse(course);
 
                 //activity log
-                _customerActivityService.InsertActivity("DeleteCustomerRole", _localizationService.GetResource("ActivityLog.DeleteCustomerRole"), customerRole.Name);
+                _customerActivityService.InsertActivity("DeleteCourse", _localizationService.GetResource("ActivityLog.Course"), course.Name);
 
-                SuccessNotification(_localizationService.GetResource("Admin.Customers.CustomerRoles.Deleted"));
+                SuccessNotification(_localizationService.GetResource("Admin.Catalog.Course.Deleted"));
                 return RedirectToAction("List");
             }
             catch (Exception exc)
             {
                 ErrorNotification(exc.Message);
-                return RedirectToAction("Edit", new { id = customerRole.Id });
+                return RedirectToAction("Edit", new { id = course.Id });
             }
         }
 
@@ -327,7 +331,7 @@ namespace Nop.Admin.Controllers
                     ErrorNotification(_localizationService.GetResource("Admin.Common.UploadFile"));
                     return RedirectToAction("List");
                 }
-                SuccessNotification(_localizationService.GetResource("Admin.Catalog.Categories.Imported"));
+                SuccessNotification(_localizationService.GetResource("Admin.Catalog.Course.Imported"));
                 return RedirectToAction("List");
             }
             catch (Exception exc)

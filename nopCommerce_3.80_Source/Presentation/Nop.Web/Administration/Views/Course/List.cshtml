@@ -5,7 +5,7 @@
     var gridPageSizes = EngineContext.Current.Resolve<Nop.Core.Domain.Common.AdminAreaSettings>().GridPageSizes;
 
     //page title
-    ViewBag.Title = T("Admin.Catalog.Categories.Manage").Text;
+    ViewBag.Title = T("Admin.Catalog.Course.Manage").Text;
     //active menu item (system name)
     Html.SetActiveMenuItemSystemName("Course");
 }
@@ -13,7 +13,7 @@
 @Html.AntiForgeryToken()
 <div class="content-header clearfix">
     <h1 class="pull-left">
-        @T("Admin.Catalog.Categories.Manage")
+        @T("Admin.Catalog.Course.Manage")
     </h1>
     <div class="pull-right">
         <a href="@Url.Action("Create")" class="btn bg-blue">
@@ -128,7 +128,7 @@
                                 columns: [
                                     {
                                         field: "Name",
-                                        title: "@T("Admin.Catalog.Categories.Fields.Name")"
+                                        title: "@T("Admin.Catalog.Course.Fields.Name")"
                                     }, {
                                         field: "Description",
                                         title: "@T("Admin.Configuration.Shipping.Methods.Fields.Description")",
@@ -193,7 +193,7 @@
                         @Html.AntiForgeryToken()
                         <ul class="common-list">
                             <li>
-                                <em>@T("Admin.Catalog.Categories.List.ImportFromExcelTip")</em>
+                                <em>@T("Admin.Catalog.Course.List.ImportFromExcelTip")</em>
                             </li>
                             <li>
                                 <em>@T("Admin.Common.ImportFromExcel.ManyRecordsWarning")</em>

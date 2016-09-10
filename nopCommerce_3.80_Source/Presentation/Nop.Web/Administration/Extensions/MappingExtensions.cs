@@ -117,7 +117,7 @@ namespace Nop.Admin.Extensions
             return model.MapTo<CourseModel, Course>();
         }
 
-        public static Course ToEntity(this CategoryModel model, Course destination)
+        public static Course ToEntity(this CourseModel model, Course destination)
         {
             return model.MapTo(destination);
         }

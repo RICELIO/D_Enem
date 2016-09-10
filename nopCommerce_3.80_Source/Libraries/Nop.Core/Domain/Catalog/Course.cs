@@ -23,6 +23,31 @@ namespace Nop.Core.Domain.Catalog
         /// </summary>
         public string Description { get; set; }
 
+        /// <summary>
+        /// Gets or sets the date and time of instance creation
+        /// </summary>
+        public DateTime CreatedOnUtc { get; set; }
+
+        /// <summary>
+        /// Gets or sets the date and time of instance update
+        /// </summary>
+        public DateTime UpdatedOnUtc { get; set; }
+
+        /// <summary>
+        /// Gets or sets the display order
+        /// </summary>
+        public int DisplayOrder { get; set; }
+
+        /// <summary>
+        /// Gets or sets the page size
+        /// </summary>
+        public int PageSize { get; set; }
+
+        /// <summary>
+        /// Gets or sets the available customer selectable page size options
+        /// </summary>
+        public string PageSizeOptions { get; set; }
+
         public bool Deleted { get; set; }
     }
 }

@@ -20,40 +20,40 @@ namespace Nop.Admin.Models.Catalog
             }
         }
 
-        [NopResourceDisplayName("Admin.Catalog.Categories.Fields.Name")]
+        [NopResourceDisplayName("Admin.Catalog.Course.Fields.Name")]
         [AllowHtml]
         public string Name { get; set; }
 
-        [NopResourceDisplayName("Admin.Catalog.Categories.Fields.Description")]
+        [NopResourceDisplayName("Admin.Catalog.Course.Fields.Description")]
         [AllowHtml]
         public string Description { get; set; }
 
-        [NopResourceDisplayName("Admin.Catalog.Categories.Fields.PageSize")]
+        [NopResourceDisplayName("Admin.Catalog.Course.Fields.PageSize")]
         public int PageSize { get; set; }
 
-        [NopResourceDisplayName("Admin.Catalog.Categories.Fields.AllowCustomersToSelectPageSize")]
+        [NopResourceDisplayName("Admin.Catalog.Course.Fields.AllowCustomersToSelectPageSize")]
         public bool AllowCustomersToSelectPageSize { get; set; }
 
-        [NopResourceDisplayName("Admin.Catalog.Categories.Fields.PageSizeOptions")]
+        [NopResourceDisplayName("Admin.Catalog.Course.Fields.PageSizeOptions")]
         public string PageSizeOptions { get; set; }
 
-        [NopResourceDisplayName("Admin.Catalog.Categories.Fields.PriceRanges")]
+        [NopResourceDisplayName("Admin.Catalog.Course.Fields.PriceRanges")]
         [AllowHtml]
         public string PriceRanges { get; set; }
 
-        [NopResourceDisplayName("Admin.Catalog.Categories.Fields.ShowOnHomePage")]
+        [NopResourceDisplayName("Admin.Catalog.Course.Fields.ShowOnHomePage")]
         public bool ShowOnHomePage { get; set; }
 
-        [NopResourceDisplayName("Admin.Catalog.Categories.Fields.IncludeInTopMenu")]
+        [NopResourceDisplayName("Admin.Catalog.Course.Fields.IncludeInTopMenu")]
         public bool IncludeInTopMenu { get; set; }
 
-        [NopResourceDisplayName("Admin.Catalog.Categories.Fields.Published")]
+        [NopResourceDisplayName("Admin.Catalog.Course.Fields.Published")]
         public bool Published { get; set; }
 
-        [NopResourceDisplayName("Admin.Catalog.Categories.Fields.Deleted")]
+        [NopResourceDisplayName("Admin.Catalog.Course.Fields.Deleted")]
         public bool Deleted { get; set; }
 
-        [NopResourceDisplayName("Admin.Catalog.Categories.Fields.DisplayOrder")]
+        [NopResourceDisplayName("Admin.Catalog.Course.Fields.DisplayOrder")]
         public int DisplayOrder { get; set; }
         
         public string Breadcrumb { get; set; }

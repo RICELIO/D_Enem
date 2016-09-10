@@ -13998,4 +13998,85 @@
    <LocaleResource Name="Admin.Catalog.Lesson.Deleted">
       <Value>A lição foi excluída com sucesso.</Value>
    </LocaleResource>
+   <LocaleResource Name="Admin.Catalog.Course.Manage">
+    <Value>Gerenciar curso</Value>
+  </LocaleResource>  
+  <LocaleResource Name="Admin.Catalog.Course.Fields.Title">
+    <Value>Título do curso</Value>
+  </LocaleResource>  
+  <LocaleResource Name="Admin.Catalog.Course.Fields.Description">
+    <Value>Descrição do curso</Value>
+  </LocaleResource>      
+  <LocaleResource Name="Admin.Catalog.Course.Fields.DisplayOrder">
+    <Value>Ordem de exibição</Value>
+  </LocaleResource>  
+  <LocaleResource Name="Admin.Catalog.Course.List.SearchCourseName">
+    <Value>Nome do curso</Value>
+  </LocaleResource> 
+  <LocaleResource Name="Admin.Catalog.Course.List.SearchStore">
+    <Value>Busca curso na loja</Value>
+  </LocaleResource>    
+  <LocaleResource Name="Admin.Catalog.Course.BackToList">
+      <Value>Voltar à lista de cursos</Value>
+   </LocaleResource>
+   <LocaleResource Name="Admin.Catalog.Course.AddNew">
+      <Value>Adicionar um novo curso</Value>
+   </LocaleResource>
+   <LocaleResource Name="Admin.Catalog.Course.EditCourseDetails">
+      <Value>Editar detalhes do curso</Value>
+   </LocaleResource>
+   <LocaleResource Name="Admin.Catalog.Course.Info">
+      <Value>Informações do curso</Value>
+   </LocaleResource>
+   <LocaleResource Name="Admin.Catalog.Course">
+      <Value>Curso</Value>
+   </LocaleResource>
+   <LocaleResource Name="Admin.Catalog.Course.Fields.AllowCustomersToSelectPageSize">
+      <Value>Permitir que os Usuários selecionem o tamanho da página</Value>
+   </LocaleResource>
+   <LocaleResource Name="Admin.Catalog.Course.Fields.AllowCustomersToSelectPageSize">
+      <Value>Permitir que os Usuários selecionem o tamanho da página</Value>
+   </LocaleResource>
+   <LocaleResource Name="Admin.Catalog.Course.Fields.PageSizeOptions">
+      <Value>Opções de tamanho da página (separados por vírgula)</Value>
+   </LocaleResource>
+   <LocaleResource Name="ActivityLog.AddNewCourse">
+      <Value>Adicionado um novo curso ('{0}')</Value>
+   </LocaleResource>
+   <LocaleResource Name="Admin.Catalog.Course.Added">
+      <Value>Um novo curso foi adicionado com êxito.</Value>
+   </LocaleResource>
+   <LocaleResource Name="Admin.Catalog.Course.Fields.SeName">
+      <Value>Nome de página amigável do mecanismo de pesquisa</Value>
+   </LocaleResource>
+   <LocaleResource Name="Admin.Catalog.Course.Fields.Title.Required">
+      <Value>Por favor, forneça um título.</Value>
+   </LocaleResource>
+   <LocaleResource Name="Admin.Catalog.Course.Fields.PageSizeOptions">
+      <Value>Opções de tamanho da página (separados por vírgula)</Value>
+   </LocaleResource>
+   <LocaleResource Name="Admin.Catalog.Course.Fields.Deleted">
+      <Value>Excluído</Value>
+   </LocaleResource>
+   <LocaleResource Name="ActivityLog.EditCourse">
+      <Value>Editado um curso ('{0}')</Value>
+   </LocaleResource>
+   <LocaleResource Name="Admin.Catalog.Course.Updated">
+      <Value>Um curso foi atualizado com sucesso.</Value>
+   </LocaleResource>   
+   <LocaleResource Name="ActivityLog.DeleteCourse">
+      <Value>Excluído um curso ('{0}')</Value>
+   </LocaleResource>
+   <LocaleResource Name="Admin.Catalog.Course.Deleted">
+      <Value>Um curso foi excluído com sucesso.</Value>
+   </LocaleResource>
+   <LocaleResource Name="Admin.Catalog.Course.Fields.Name">
+      <Value>Nome do curso</Value>
+   </LocaleResource>
+   <LocaleResource Name="Admin.Catalog.Course.List.SearchCategoryName">
+      <Value>Nome do curso</Value>
+   </LocaleResource>
+   <LocaleResource Name="Admin.Catalog.Course.EditCourseDetails">
+      <Value>Editar detalhes do curso</Value>
+   </LocaleResource>
 </Language>

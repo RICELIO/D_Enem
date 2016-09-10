@@ -2152,6 +2152,9 @@
     <Content Include="Views\Lessons\Create.cshtml" />
     <Content Include="Views\Lessons\Edit.cshtml" />
     <Content Include="Views\Course\List.cshtml" />
+    <Content Include="Views\Course\Create.cshtml" />
+    <Content Include="Views\Course\_CreateOrUpdate.cshtml" />
+    <Content Include="Views\Course\Edit.cshtml" />
     <None Include="Views\Product\_ProductAttributes.cshtml" />
     <Content Include="Views\Setting\_ReturnRequestReasons.cshtml" />
     <Content Include="Views\Setting\ReturnRequestReasonEdit.cshtml" />

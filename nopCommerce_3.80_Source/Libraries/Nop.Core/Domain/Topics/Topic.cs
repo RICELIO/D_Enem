@@ -1,3 +1,4 @@
+using Nop.Core.Domain.Catalog;
 using Nop.Core.Domain.Localization;
 using Nop.Core.Domain.Security;
 using Nop.Core.Domain.Seo;
@@ -67,6 +68,21 @@ namespace Nop.Core.Domain.Topics
         public string Body { get; set; }
 
         /// <summary>
+        /// Gets or sets the picture identifier
+        /// </summary>
+        public int? PictureId { get; set; }
+
+        /// <summary>
+        /// Gets or sets the parent category identifier
+        /// </summary>
+        public int? CourseId { get; set; }
+
+        /// <summary>
+        /// Gets or sets the parent category identifier
+        /// </summary>
+        public int? LessonId { get; set; }
+
+        /// <summary>
         /// Gets or sets a value indicating whether the entity is published
         /// </summary>
         public bool Published { get; set; }
@@ -100,5 +116,15 @@ namespace Nop.Core.Domain.Topics
         /// Gets or sets a value indicating whether the entity is limited/restricted to certain stores
         /// </summary>
         public bool LimitedToStores { get; set; }
+
+        /// <summary>
+        /// Gets or sets the parent category identifier
+        /// </summary>
+         public virtual Course Course { get; set; }
+
+        /// <summary>
+        /// Gets or sets the parent category identifier
+        /// </summary>
+        public virtual Lesson Lesson { get; set; }
     }
 }

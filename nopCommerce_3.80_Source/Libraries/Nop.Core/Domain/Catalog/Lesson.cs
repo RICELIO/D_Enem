@@ -13,6 +13,7 @@ namespace Nop.Core.Domain.Catalog
     /// </summary>
     public partial class Lesson : BaseEntity, ILocalizedEntity, ISlugSupported
     {
+        private ICollection<Topics.Topic> _topics;
         /// <summary>
         /// Gets or sets the name
         /// </summary>
@@ -32,5 +33,14 @@ namespace Nop.Core.Domain.Catalog
         /// Gets or sets the date and time of instance update
         /// </summary>
         public DateTime UpdatedOnUtc { get; set; }
+
+        /// <summary>
+        /// Gets or sets topic items
+        /// </summary>
+        public virtual ICollection<Topics.Topic> Topics
+        {
+            get { return _topics ?? (_topics = new List<Topics.Topic>()); }
+            protected set { _topics = value; }
+        }
     }
 }

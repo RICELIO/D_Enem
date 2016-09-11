@@ -13,6 +13,7 @@ using Nop.Services.Stores;
 using Nop.Services.Topics;
 using Nop.Web.Framework.Controllers;
 using Nop.Web.Framework.Kendoui;
+using Nop.Services.Catalog;
 
 namespace Nop.Admin.Controllers
 {
@@ -26,6 +27,9 @@ namespace Nop.Admin.Controllers
         private readonly ILocalizationService _localizationService;
         private readonly IPermissionService _permissionService;
         private readonly IStoreService _storeService;
+        private readonly ICourseService _courseService;
+        private readonly ILessonService _lessonService;
+
         private readonly IStoreMappingService _storeMappingService;
         private readonly IUrlRecordService _urlRecordService;
         private readonly ITopicTemplateService _topicTemplateService;
@@ -37,7 +41,7 @@ namespace Nop.Admin.Controllers
 
         #region Constructors
 
-        public TopicController(ITopicService topicService,
+        public TopicController(ITopicService topicService, ICourseService courseService, ILessonService lessonService,
             ILanguageService languageService,
             ILocalizedEntityService localizedEntityService, 
             ILocalizationService localizationService,
@@ -52,6 +56,8 @@ namespace Nop.Admin.Controllers
         {
             this._topicService = topicService;
             this._languageService = languageService;
+            this._courseService = courseService;
+            this._lessonService = lessonService;
             this._localizedEntityService = localizedEntityService;
             this._localizationService = localizationService;
             this._permissionService = permissionService;
@@ -213,8 +219,23 @@ namespace Nop.Admin.Controllers
             }
         }
 
+        [NonAction]
+        protected virtual void PrepareAllTopic(TopicModel model)
+        {
+            if (model == null)
+                throw new ArgumentNullException("model");
+
+            model.AvailableCourses.Add(new SelectListItem { Text = "[None]", Value = "0" });
+            foreach (var s in _courseService.GetAllCourse())
+                model.AvailableCourses.Add(new SelectListItem { Text = s.Name, Value = s.Id.ToString() });
+
+            model.AvailableLessons.Add(new SelectListItem { Text = "[None]", Value = "0" });
+            foreach (var s in _lessonService.GetAllLessons())
+                model.AvailableLessons.Add(new SelectListItem { Text = s.Title, Value = s.Id.ToString() });
+        }
+
         #endregion
-        
+
         #region List
 
         public ActionResult Index()
@@ -280,7 +301,9 @@ namespace Nop.Admin.Controllers
             PrepareStoresMappingModel(model, null, false);
             //locales
             AddLocales(_languageService, model.Locales);
-            
+
+            PrepareAllTopic(model);
+
             //default values
             model.DisplayOrder = 1;
             model.Published = true;
@@ -337,6 +360,9 @@ namespace Nop.Admin.Controllers
             PrepareAclModel(model, null, true);
             //Stores
             PrepareStoresMappingModel(model, null, true);
+
+            PrepareAllTopic(model);
+
             return View(model);
         }
 
@@ -358,6 +384,9 @@ namespace Nop.Admin.Controllers
             PrepareAclModel(model, topic, false);
             //Store
             PrepareStoresMappingModel(model, topic, false);
+
+            PrepareAllTopic(model);
+
             //locales
             AddLocales(_languageService, model.Locales, (locale, languageId) =>
             {
@@ -423,6 +452,9 @@ namespace Nop.Admin.Controllers
             model.Url = Url.RouteUrl("Topic", new { SeName = topic.GetSeName() }, "http");
             //templates
             PrepareTemplatesModel(model);
+
+            PrepareAllTopic(model);
+
             //ACL
             PrepareAclModel(model, topic, true);
             //Store

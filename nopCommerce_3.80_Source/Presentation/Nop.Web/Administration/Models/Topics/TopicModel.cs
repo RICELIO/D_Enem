@@ -22,6 +22,9 @@ namespace Nop.Admin.Models.Topics
 
             SelectedStoreIds = new List<int>();
             AvailableStores = new List<SelectListItem>();
+
+            AvailableCourses= new List<SelectListItem>();
+            AvailableLessons = new List<SelectListItem>();
         }
 
         [NopResourceDisplayName("Admin.ContentManagement.Topics.Fields.SystemName")]
@@ -101,6 +104,17 @@ namespace Nop.Admin.Models.Topics
         public IList<int> SelectedCustomerRoleIds { get; set; }
         public IList<SelectListItem> AvailableCustomerRoles { get; set; }
 
+        [NopResourceDisplayName("Admin.Catalog.Topics.Fields.Course")]
+        public int CourseId { get; set; }
+        public IList<SelectListItem> AvailableCourses { get; set; }
+
+        [NopResourceDisplayName("Admin.Catalog.Topics.Fields.Lesson")]
+        public int LessonId { get; set; }
+        public IList<SelectListItem> AvailableLessons { get; set; }
+
+        [UIHint("Picture")]
+        [NopResourceDisplayName("Admin.Catalog.Categories.Fields.Picture")]
+        public int PictureId { get; set; }
     }
 
     public partial class TopicLocalizedModel : ILocalizedModelLocal
